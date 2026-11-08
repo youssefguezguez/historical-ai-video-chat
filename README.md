@@ -1,21 +1,18 @@
 # Historical AI Video Chat
 
-A prototype web app for talking with an AI-simulated historical figure, Hannibal Barca, in a
-"video call" in the browser. Built during an AI internship at Golden Madina (Nabeul, Tunisia)
-in summer 2024.
+A prototype web app for video chats with AI-simulated historical figures, built solo during
+my AI internship at Golden Madina (Nabeul, Tunisia), May–August 2024.
 
-**How it works**
-- **Conversation:** OpenAI chat API with a role-play system prompt. Hannibal answers briefly,
-  in English, French or Arabic.
-- **Voice:** questions can be spoken (browser speech recognition), and answers are read aloud
-  with ElevenLabs multilingual text-to-speech.
-- **Avatar:** an animated 3D model of Hannibal rendered with three.js (GLTF/Draco).
-- **Call view:** the user's webcam via WebRTC, plus the conversation history.
+- **Role-play:** a GPT model fine-tuned through the OpenAI API plays each figure (Hannibal
+  Barca, Mago I of Carthage, Elissa) and answers briefly in English, French or Arabic.
+- **3D avatars:** each figure is rendered as an animated 3D avatar in the browser with three.js.
+- **Video call:** WebRTC call view, with spoken questions (speech recognition) and spoken
+  answers (ElevenLabs multilingual text-to-speech).
 
-**Stack:** Python, Flask, Flask-SocketIO, OpenAI API, ElevenLabs API, JavaScript, three.js, WebRTC.
+**Stack:** Python, Flask, LangChain, WebRTC, OpenAI API, ElevenLabs, three.js
 
-**Status:** prototype, not deployed. Only Hannibal is implemented; the other characters on the
-home page are placeholders. The 3D model file (~96 MB) is not included in the repository.
+**Status:** prototype, not deployed. This repository holds the prompt-based version of the
+role-play (gpt-3.5-turbo) with Hannibal implemented; the 3D model file (~96 MB) is not included.
 
 ## Run locally
 
